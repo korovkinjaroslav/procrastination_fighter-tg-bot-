@@ -1,2 +1,2 @@
 for i in range(1000):
-    print('женя лох')
+    print('qwer')
