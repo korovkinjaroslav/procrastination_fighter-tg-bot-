@@ -8,7 +8,7 @@ name=input()
 
 if name == "Yaroslav":
     print("лох")
-if input('Назовите любое имя\n') in ['Женя', 'Евгений']:
+if input('Назовите любое имя\n').lower() in ['Женя', 'Евгений']:
     print('лох')
 print('аываываы')
 print("bebra")
