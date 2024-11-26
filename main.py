@@ -12,3 +12,4 @@ if input('Назовите любое имя\n').lower() in ['Женя', 'Евг
     print('лох')
 print('аываываы')
 print("bebra")
+print('уга-буга')
