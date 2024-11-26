@@ -10,4 +10,5 @@ if name == "Yaroslav":
     print("лох")
 if input('Назовите любое имя\n') in ['Женя', 'Евгений']:
     print('лох')
+print('аываываы')
 print("bebra")
