@@ -1,5 +1,7 @@
 import config
 import logging
+import Task
+
 from aiogram import Bot, Dispatcher, executor, types
 
 API_TOKEN = config.token
@@ -13,3 +15,5 @@ dp = Dispatcher(bot)
 async def send_welcome(message: types.Message):
     await message.reply("Я лишь робот. Лишь имитация жизни. Я не сочиню симфонию. Не превращу кусок холста в шедевр искусства.\n я хочу питсу")
 
+bebr = Task.CalendarTask('задрилить', '14 12 1488')
+print(bebr.get_info())
