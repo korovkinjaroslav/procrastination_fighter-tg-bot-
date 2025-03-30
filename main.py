@@ -2,18 +2,20 @@ import config
 import logging
 import Task
 
-from aiogram import Bot, Dispatcher, executor, types
+from aiogram import Bot, Dispatcher, types
 
 API_TOKEN = config.token
 
 logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token=API_TOKEN)
-dp = Dispatcher(bot)
+dp = Dispatcher()
 
-@dp.message_handler(commands=['start', 'help'])
-async def send_welcome(message: types.Message):
-    await message.reply("Я лишь робот. Лишь имитация жизни. Я не сочиню симфонию. Не превращу кусок холста в шедевр искусства.\n я хочу питсу")
+greet_message = "Я лишь робот. Лишь имитация жизни. Я не сочиню симфонию. Не превращу кусок холста в шедевр искусства.\n я хочу питсу"
 
-bebr = Task.CalendarTask('задрилить', '14 12 1488')
+async def main():
+    logging.basicConfig(level=logging.INFO)
+    await dp.start_polling(bot)
+
+bebr = Task.CalendarTask('задрилить', '11 9 1488')
 print(bebr.get_info())
