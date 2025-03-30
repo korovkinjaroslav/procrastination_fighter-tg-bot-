@@ -1,7 +1,5 @@
 import config
-import aiogram
 import logging
-
 from aiogram import Bot, Dispatcher, executor, types
 
 API_TOKEN = config.token
